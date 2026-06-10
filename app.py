@@ -129,7 +129,7 @@ elif sayfa == "🛒 2. Dijital Sipariş Ekranı":
                 
                 # SİTENİN CANLIYA ALINACAĞI LİNK (Hocanın telefonunda açılacak olan sayfa linki!)
                 # Buluta yükledikten sonra buraya share.streamlit.app ile başlayan kendi linkini koyacaksın kanka
-                 canli_site_url = f"https://nisadijitalfis.streamlit.app/?id={st.session_state['siparis_no']}&user={st.session_state['musteri']}&total={toplam_tutar}&market={st.session_state['magaza_adi']}"
+                canli_site_url = f"https://nisadijitalfis.streamlit.app/?id={st.session_state['siparis_no']}&user={st.session_state['musteri']}&total={toplam_tutar}&market={st.session_state['magaza_adi']}"
                 qr = qrcode.QRCode(version=1, box_size=5, border=4)
                 qr.add_data(canli_site_url)
                 qr.make(fit=True)
